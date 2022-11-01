@@ -68,7 +68,7 @@ public class Employee {
     }
 
     //Вывод всего списка в массиве
-    public static void getAList(Employee[] employees) {
+    public static void printAllEmplyees(Employee[] employees) {
         for (Employee employees1 : employees) {
             if (employees1 != null) {
                 System.out.println(employees1.toString());
@@ -134,17 +134,17 @@ public class Employee {
             if (employees1 != null) {
                 sum += employees1.getSalary();
                 countId++;
-                average = sum / countId;
 
             }
         }
+        average = sum / countId;
         System.out.println("Средняя зарплата состовляет " + average);
     }
 
     public static void allFio(Employee[] employees) {
         for (Employee employees1 : employees) {
             if (employees1 != null) {
-                System.out.println("Ф.И.О "+employees1.getFullName());
+                System.out.println("Ф.И.О " + employees1.getFullName());
             }
         }
     }
